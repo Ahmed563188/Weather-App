@@ -5,7 +5,7 @@ async function getWeather(lat, lon) {
         );
         const data = await res.json();
 
-        document.getElementById("location").innerText = `📍 Coordinates: ${lat.toFixed(2)}, ${lon.toFixed(2)}`;
+        document.getElementById("location").innerText = ` Current Location: ${lat.toFixed(2)}, ${lon.toFixed(2)}`;
 
         document.getElementById("current-temp").innerText = `${data.current.temperature_2m}°C`;
 
