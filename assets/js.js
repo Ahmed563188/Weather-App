@@ -11,7 +11,7 @@ async function getWeather(lat, lon) {
 
         const forecastData = data.daily;
         let forecastHTML = "";
-        for (let i = 2; i <= 3; i++) {
+        for (let i = 1; i <= 2; i++) {
             forecastHTML += `Day ${i}:  Max ${forecastData.temperature_2m_max[i]}° / Min ${forecastData.temperature_2m_min[i]}°<br><br>`;
         }
         document.getElementById("forecast").innerHTML = forecastHTML;
